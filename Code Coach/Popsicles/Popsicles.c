@@ -27,7 +27,6 @@ int main() {
     scanf("%d", &siblings);
     scanf("%d", &popsicles);
     int d=popsicles%siblings;
-    //your code goes here
     
     if (d==0)
     {printf("give away");}
