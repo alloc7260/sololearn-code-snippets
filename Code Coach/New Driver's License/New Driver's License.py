@@ -22,9 +22,9 @@ Explanation
 It will take 40 minutes to get your license because you are in the second group of two to be seen by one of the two available agents.
 '''
 
-mn=str(input())
+mn=input()
 noa=int(input())
-on=str(input())
+on=input()
 
 onl=list(on.split(" "))
 onl.append(mn)

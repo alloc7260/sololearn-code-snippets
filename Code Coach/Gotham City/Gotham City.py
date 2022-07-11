@@ -22,7 +22,7 @@ Explanation:
  If there are 7 criminals, you and Batman should handle this situation together.
  '''
 
- i=int(input())
+i=int(input())
 
 if i < 5 :
     print('I got this!')
