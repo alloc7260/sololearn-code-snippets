@@ -20,14 +20,9 @@ Explanation:
 You heard the noise made by a tiger, then a bird, and then a snake.
 '''
 
-ip=input().split(" ")
 ani={
     'Grr':'Lion',
     'Rawr':'Tiger',
     'Ssss':'Snake',
-    'Chirp':'Bird'
-}
-op=[]
-for i in ip :
-    op.append(ani.get(i))
-print(' '.join(op))
+    'Chirp':'Bird'}
+print(' '.join([ani.get(i) for i in input().split(" ")]))

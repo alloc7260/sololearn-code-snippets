@@ -21,7 +21,5 @@ You need 50.00 to buy 10 colors of paint + 40.00 for the canvas and brushes + 9.
 '''
 
 import math
-nc=float(input())
-cwt=40+(5*nc)
-fc=cwt+((10*cwt)/100)
-print(math.ceil(fc))
+a=40+(5*float(input()))
+print(math.ceil(a+a*0.1))

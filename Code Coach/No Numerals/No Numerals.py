@@ -20,15 +20,10 @@ Explanation:
 You would update the phrase to change '2' to 'two' and '3' to 'three'.
 '''
 
-def f(str,s1,s2) :
-	str=str.replace(s1,s2)
-	return(str)
 s=input()
 ls=list(range(11))
-lr=ls[::-1]
 la=["ten","nine","eight","seven","six","five","four","three","two","one","zero"]
-for i in ls :
-	s=f(s,str(lr[i]),str(la[i]))
+for i in ls : s=s.replace(str(ls[::-1][i]),str(la[i]))
 print(s)
 
 # s=input()

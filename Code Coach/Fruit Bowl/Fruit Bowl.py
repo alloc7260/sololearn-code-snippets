@@ -20,7 +20,4 @@ Explanation
 If you have 26 pieces of fruit, you have 13 apples, which makes 4 pies, and leaves one apple left over.
 '''
 
-fruit=int(input())
-apple=int(fruit/2)
-pie=int(apple/3)
-print(pie)
+print(int(int(int(input())/2)/3))

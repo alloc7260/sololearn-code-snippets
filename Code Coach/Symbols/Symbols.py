@@ -21,6 +21,6 @@ If you take out every symbol and leave only the letters and numbers, your text s
 '''
 
 sn=input()
-for i in ["@","%","$","&","#","!","*","-",":","_","?"] :
- sn=sn.replace(i,"")
+symbols = ["@","%","$","&","#","!","*","-",":","_","?"]
+for i in symbols : sn=sn.replace(i,"")
 print(sn)

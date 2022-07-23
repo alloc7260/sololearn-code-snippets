@@ -21,11 +21,6 @@ Explanation:
 If you replace each letter in 'Hello World' with the corresponding letter in a backwards version of the alphabet, you get 'svool dliow'.
 '''
 
-input_string = input().lower()
 alphabets = " abcdefghijklmnopqrstuvwxyz "
-alphabets_reverse = alphabets[::-1]
-encoded_message = ""
-for i in input_string : 
- position = alphabets.index(i)
- encoded_message += alphabets_reverse[position]
-print(encoded_message)
+alphabets_reverse = alphabets[::-1] 
+print("".join([alphabets_reverse[alphabets.index(i)] for i in input().lower()]))

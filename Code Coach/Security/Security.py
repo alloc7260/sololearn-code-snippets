@@ -27,5 +27,4 @@ d=s.find("$")
 t=s.find("T")
 sn=s[d:t]
 if len(sn)==0 : sn=s[t:d]
-if "G" in sn : print("quiet")
-else : print("ALARM")
+print("quiet") if "G" in sn else print("ALARM")

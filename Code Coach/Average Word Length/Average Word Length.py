@@ -21,8 +21,6 @@ The string in question has five words with a total of 26 letters (spaces do not 
 '''
 
 punctuations = "`-=\\][';/.,~!@#$%^&*()_+|}{\":?><"
-li=list("".join([char for char in input() if (char not in punctuations)]).split(" "))
-x=0
-for i in li : x+=len(i)
+li="".join([char for char in input() if (char not in punctuations)]).split(" ")
 import math
-print(math.ceil(x/len(li)))
+print(math.ceil(sum([len(x) for x in li])/len(li)))

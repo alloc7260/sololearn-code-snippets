@@ -22,14 +22,4 @@ Explanation:
 
 ip1=list(input().split(" "))
 ip2=list(ip1[0].split(":"))
-if ip1[1]=="AM" :
-	if int(ip2[0])==12 :
-		print(f"00:{ip2[1]}")
-	else :
-		print(ip1[0].zfill(5))
-else :
-	if int(ip2[0])==12 :
-		print(ip1[0])
-	else :
-		print(f"{int(ip2[0])+12}:{ip2[1]}")
-		
+(print(f"00:{ip2[1]}") if int(ip2[0])==12 else print(ip1[0].zfill(5))) if ip1[1]=="AM" else (print(ip1[0]) if int(ip2[0])==12 else print(f"{int(ip2[0])+12}:{ip2[1]}"))

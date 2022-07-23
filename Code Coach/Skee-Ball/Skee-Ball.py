@@ -23,10 +23,5 @@ By scoring 500 points, you will receive 41 tickets, which is enough to buy the s
 
 points = int(input())
 squirt_gun_tickets = int(input())
-points2tickets = int( points / 12 )
-# 12points = 1ticket
-if squirt_gun_tickets <= points2tickets :
-    print("Buy it!")
-else :
-    print("Try again")
-    
+points2tickets = int(points/12) # 12points = 1ticket
+print("Buy it!") if squirt_gun_tickets<=points2tickets else print("Try again")

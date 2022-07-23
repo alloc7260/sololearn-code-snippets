@@ -24,21 +24,5 @@ It will take 40 minutes to get your license because you are in the second group 
 
 mn=input()
 noa=int(input())
-on=input()
-
-onl=list(on.split(" "))
-onl.append(mn)
-
-l=list(range(0))
-for x in sorted(onl):
-	    l.append(x)
-
-len=len(l)
-mnli=(l.index(mn))+1
-int=0
-
-for i in range(len):
-	if mnli > (i*noa) :
-		int=(20*(i+1))
-
-print(int)
+l=[x for x in sorted(input().split(" ")+[mn])]
+print([20*(i+1) for i in range(len(l)) if l.index(mn)+1 > (i*noa)][-1])

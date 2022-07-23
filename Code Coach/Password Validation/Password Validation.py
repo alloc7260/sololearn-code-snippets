@@ -22,18 +22,6 @@ The password has 2 numbers, 2 of the defined special characters, and its length 
 '''
 
 s=input()      #len >=7
-if len(s)<7:
-	print("Weak")
-	quit()
-
 n="0123456789" #min 2 of them
-if len([i for i in s if i in n])<2:
-	print("Weak")
-	quit()
-
 sc="!@#&%$*"   #min 2 of them
-if len([i for i in s if i in sc])<2:
-	print("Weak")
-	quit()
-
-print("Strong")
+print("Weak") if (len(s)<7 or len([i for i in s if i in n])<2 or len([i for i in s if i in sc])<2) else print("Strong")

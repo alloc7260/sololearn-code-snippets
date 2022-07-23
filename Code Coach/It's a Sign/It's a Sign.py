@@ -27,10 +27,6 @@ def is_palindrome(word):
     if word == word[::-1] :
         return True
     return False
-
 for i in range(4) :
-    if is_palindrome(input()) :
-        print('Open')
-        break
-else :
-    print('Trash')
+    if is_palindrome(input()) : print('Open');break
+else : print('Trash')

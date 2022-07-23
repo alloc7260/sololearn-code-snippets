@@ -20,7 +20,6 @@ Explanation
 Because Popcorn is not on the menu, this friend gets a coke which brings the subtotal to $25.00 and $26.75 with tax.
 '''
 
-items=input().split()
 d={
     'Nachos' : 6,
     'Pizza' : 6,
@@ -28,13 +27,5 @@ d={
     'Water' : 4,
     'Coke' : 5
 }
-tax=7
-ordertotal=0
-cost=0
-for i in items:
-    if i in d.keys():
-        ordertotal += d[i]
-    else:
-        ordertotal += 5 # for coke
-cost = ordertotal + (ordertotal*0.07)
-print(cost)
+ot=sum([d[i] if i in d.keys() else 5 for i in input().split()])
+print(ot+ot*0.07)

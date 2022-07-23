@@ -37,5 +37,4 @@ number_lst = list(map(int, (i for i in card))) #convert string to list of number
 reverse_lst = number_lst[::-1] #step1
 reverse_lst[1::2] = [x*2 for x in reverse_lst[1::2]] #step2
 reverse_lst = [i-9 if i>9 else i for i in reverse_lst] #step3
-if (len(card) == 16) and (sum(reverse_lst) % 10 == 0):print('valid') #step4&5
-else:print('not valid')
+print('valid') if ((len(card) == 16) and (sum(reverse_lst)%10==0)) else print('not valid')

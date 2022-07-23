@@ -20,9 +20,4 @@ Explanation
 The output should be the original sentence with each word changed so that they first letter is at the end and then -ay is added after that.
 '''
 
-sn=input().split( )
-snn=""
-for w in sn :
-	n=w[1:]+w[0]+"ay"
-	snn=snn+n+" "
-print(snn)
+print("".join([w[1:]+w[0]+"ay"+" " for w in input().split()]))

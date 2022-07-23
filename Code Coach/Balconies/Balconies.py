@@ -23,5 +23,4 @@ Since the area of apartment A's balcony is 25 and the area of apartment B's balc
 
 al,ab = map(int,input().split(','))
 bl,bb = map(int,input().split(','))
-if (al*ab)>(bl*bb) : print('Apartment A')
-else : print('Apartment B')
+print('Apartment A') if (al*ab)>(bl*bb) else print('Apartment B')

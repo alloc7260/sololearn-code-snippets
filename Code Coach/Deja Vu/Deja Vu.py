@@ -22,13 +22,4 @@ Your program should output 'Deja Vu' because there are many repetitions in 'aaaa
 
 s=str(input())
 alp="abcdefghijklmnopqrstuvwxyz"
-l=[]
-for i in alp :
-	if i in s :
-		l.append(s.count(i))
-x=max(l)
-if x==2 :
-	print("Deja Vu")
-else :
-	print("Unique")
-		
+print("Deja Vu") if max([s.count(i) for i in alp if i in s])==2	else print("Unique")

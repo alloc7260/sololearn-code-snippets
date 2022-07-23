@@ -23,11 +23,7 @@ Explanation:
  '''
 
 i=int(input())
-
-if i < 5 :
-    print('I got this!')
-elif i < 10 :
-    print('Help me Batman')
-elif i >= 10 :
-    print('Good Luck out there!')
+if i < 5 : print('I got this!')
+elif i < 10 : print('Help me Batman')
+elif i >= 10 : print('Good Luck out there!')
     

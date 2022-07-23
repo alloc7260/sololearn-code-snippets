@@ -21,10 +21,13 @@ Explanation
 You should use Pesos to buy the hat since 4000 pesos is equal to $80.
 '''
 
+'''
+cent pesos usd       cent pesos usd
+2    1           =>  100  50    1     =>  1usd = 50pesos
+100        1
+'''
+
 req_pesos = int(input())
 req_dolls = int(input())
 req_dolls_in_pesos = req_dolls * 50
-if req_dolls_in_pesos > req_pesos :
-    print("Pesos")
-else :
-    print("Dollars")
+print("Pesos") if req_dolls_in_pesos>req_pesos else print("Dollars")

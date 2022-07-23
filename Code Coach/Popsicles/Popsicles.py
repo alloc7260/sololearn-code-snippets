@@ -22,11 +22,4 @@ You can give the popsicles to the brothers and sisters because they would each g
 
 siblings = int(input())
 popsicles = int(input())
-
-d=0
-d=popsicles%siblings
-if d==0:
- print("give away")
-else :
- print("eat them yourself")
- 
+print("give away") if popsicles%siblings==0 else print("eat them yourself")
