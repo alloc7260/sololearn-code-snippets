@@ -23,7 +23,4 @@ Explanation:
  '''
 
 i=int(input())
-if i < 5 : print('I got this!')
-elif i < 10 : print('Help me Batman')
-elif i >= 10 : print('Good Luck out there!')
-    
+print('I got this!') if i<5 else print('Help me Batman') if i<10 else print('Good Luck out there!')

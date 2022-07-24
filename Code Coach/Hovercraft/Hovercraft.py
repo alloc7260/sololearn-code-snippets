@@ -22,7 +22,4 @@ If you only sold 5 hovercrafts, you spent 21,000,000 to operate but only made 15
 
 sales=int(input())
 earn=sales*3000000;
-if(earn>21000000):print("Profit")
-elif(earn<21000000):print("Loss")
-else:print("Broke Even")
- 
+print("Profit") if (earn>21000000) else print("Loss") if (earn<21000000) else print("Broke Even")

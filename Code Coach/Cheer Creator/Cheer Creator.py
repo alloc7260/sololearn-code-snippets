@@ -21,6 +21,4 @@ If your team gains 3 yards you would cheer 'Ra!' three times for that play.
 '''
 
 i=int(input())
-if i<1:print("shh")
-elif i>10:print("High Five")
-else:print("Ra!"*i)
+print("shh") if i<1 else print("High Five") if i>10 else print("Ra!"*i)
