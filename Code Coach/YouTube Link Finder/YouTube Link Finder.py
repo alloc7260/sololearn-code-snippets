@@ -21,10 +21,4 @@ Note that the input can be in two different formats.
 '''
 
 link=input()
-p=(link.rfind("="))
-if p>0 :
- list=(link.split("="))
- print(list[1])
-else :
- list=(link.split("/"))
- print(list[3])
+print((link.split("="))[1]) if (link.rfind("="))>0 else print((link.split("/"))[3])

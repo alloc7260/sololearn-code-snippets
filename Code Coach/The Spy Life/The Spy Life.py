@@ -20,10 +20,5 @@ Explanation:
 If you remove everything that isn't a letter or space from the original message and flip it around, you get 'Hello World'.
 '''
 
-list=list(range(0))
 c="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz "
-for i in input():
-	if i in c :
-		list.append(i)
-a=list[::-1]
-print(''.join(a))
+print(''.join([i for i in input() if i in c][::-1]))

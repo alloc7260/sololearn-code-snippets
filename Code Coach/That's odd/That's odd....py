@@ -29,10 +29,4 @@ Explanation:
 If you add together 2, 4, 6, and 8 from the list, you get a sum of 20.
 '''
 
-l=int(input())
-n=0
-for i in range(l):
- i=int(input())
- if i%2==0 :
-  n=n+i
-print(n)
+print(sum([i for i in [int(input()) for _ in range(int(input()))] if i%2==0]))
