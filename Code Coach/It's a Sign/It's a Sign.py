@@ -24,8 +24,34 @@ RACECAR is a palindrome and is the same forwards and backwards. You will want to
 '''
 
 def is_palindrome(word):
-    if word == word[::-1] : return True
-    return False
+	if word == word[::-1] :
+		return True
+	return False
+
 for i in range(4) :
-    if is_palindrome(input()) : print('Open');break
-else : print('Trash')
+	if is_palindrome(input()) :
+		print('Open')
+		break
+else :
+	print('Trash')
+
+#-------------------------------
+
+for i in range(4) :
+	word = input()
+	if word == word[::-1] :
+		print('Open')
+		break
+else :
+	print('Trash')
+
+#-------------------------------
+
+def is_four_palindrome():
+	for i in range(4) :
+		word = input()
+		if word == word[::-1] :
+			return 'Open'
+	return 'Trash'
+
+print(is_four_palindrome())

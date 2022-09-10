@@ -20,10 +20,9 @@ Explanation:
 You would update the phrase to change '2' to 'two' and '3' to 'three'.
 '''
 
+la=("ten","nine","eight","seven","six","five","four","three","two","one","zero")
 s=input()
-ls=list(range(11))
-la=["ten","nine","eight","seven","six","five","four","three","two","one","zero"]
-for i in ls : s=s.replace(str(ls[::-1][i]),str(la[i]))
+for i in range(11) : s=s.replace(str(range(11)[::-1][i]),str(la[i]))
 print(s)
 
 # s=input()
