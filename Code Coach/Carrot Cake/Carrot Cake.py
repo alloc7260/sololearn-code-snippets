@@ -23,30 +23,5 @@ Explanation:
 You will have zero leftover carrots after you neatly pack 100 carrots evenly into 10 boxes. You need to buy all of the carrots (7) for your cake.
 '''
 
-nc = int(input())
-nb = int(input())
-io = round(((nc/nb)-int(nc/nb))*nb)
-if io>=7 : print('Cake Time')
-else : print(f"I need to buy {7-io} more")
-
-"""
-nc = int(input())
-nb = int(input())
-leftover = nc%nb
-if leftover>=7:print("Cake Time")
-else:
- print(f"I need to buy {7 - leftover} more")
-"""
-"""
-c = int(input())
-b = int(input())
-k = c%b
-print("Cake Time" if k >= 7 else f"I need to buy {7-k} more")
-"""
-"""
-a = int(input())
-b = int(input())
-if a % b >= 7:print('Cake Time')
-else:
- print(f'I need to buy {7-(a%b)} more')
-"""
+io = int(input()) % int(input())
+print("Cake Time" if io >= 7 else f"I need to buy {7-io} more")               b

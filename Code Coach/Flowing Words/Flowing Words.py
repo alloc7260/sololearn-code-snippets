@@ -21,10 +21,5 @@ Explanation:
 Each word begins with the letter that the previous word ends with, therefore the output is true.
 '''
 
-def func(sen):
-    for i in range(len(sen)-1):
-        if sen[i][-1] == sen[i+1][0]:
-            if i==len(sen)-2:
-                return "true"
-        else:return "false"
-print(func(input().split(" ")))
+sen = input().split()
+print("true") if all([True if i[-1] == j[0] else False for i,j in zip(sen[:-1],sen[1:])]) else print("false")
